@@ -1,0 +1,161 @@
+/* Globální styly a font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Hlavička - Hero sekce */
+.hero {
+    background-image: url(novedresy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid #005A9C; /* Tmavě modrá/navy pruh (jako na dresech) */
+}
+
+.hero h1 {
+    margin-top: 10px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Stylování sekcí */
+section {
+    padding: 40px 10%; /* Mezery nahoře/dole a po stranách */
+    margin: 20px 0;
+    background-color: white;
+    color: #333;
+    border-radius: 8px; /* Zaoblené rohy */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Jemný stín */
+}
+
+section:nth-child(even) {
+    background-color: #eee; /* Střídavé pozadí pro lepší oddělení sekcí */
+}
+
+/* Nadpisy */
+h2 {
+    color: #DC0027; /* Arsenal Red pro nadpisy sekcí */
+    border-bottom: 2px solid #DC0027;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Zápatí */
+footer {
+    background-color: #333; /* Tmavé pozadí zápatí */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #FFC600; /* Zlatá/žlutá barva pro odkazy v zápatí */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}/* Styling pro seznam hráčů (nová sekce) */
+.player-list {
+    list-style: none; /* Odstranění standardních odrážek */
+    padding: 0;
+}
+
+.player-list li {
+    background-color: #fff;
+    border-left: 5px solid #DC0027; /* Arsenal červená čára pro zvýraznění */
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Plynulý přechod */
+    cursor: pointer;
+    color: #333
+}
+
+/* Efekt při najetí myši (hover) */
+.player-list li:hover {
+    transform: translateX(10px); /* Posunutí doprava, aby to vypadalo, že se prvek "vynořil" */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Výraznější stín */
+    background-color: #ffe6e9; /* Velmi jemný červený podklad */
+}
+
+/* Úprava nadpisů pro lepší viditelnost na mobilu (CSS Media Query) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    section {
+        padding: 20px 5%;
+    }
+}/* Styly pro obrázek stadionu */
+.stadium-img {
+    width: 100%; /* Obrázek se roztáhne na šířku sekce */
+    max-height: 400px;
+    object-fit: cover; /* Zajišťuje, že obrázek vypadá dobře a není zdeformovaný */
+    border-radius: 8px;
+    margin: 15px 0 25px 0;
+/* Styling pro sekce */
+section {
+    padding: 40px 10%; 
+    margin: 20px 0;
+    background-color: white; /* Ujištění, že pozadí je bílé */
+    color: #333; /* VYNUCENÁ TMAVÁ BARVA TEXTU pro všechny sekce */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+/* ... ostatní styly sekce (např. section:nth-child(even)) nechte beze změny ... */
+}p {
+    color: #333 !important;
+}/* Styly pro externí odkazy */
+.social-links {
+    text-align: center;
+}
+
+.link-container {
+    display: flex; /* Uspořádání prvků vedle sebe */
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-top: 30px;
+}
+
+.link-container a {
+    text-decoration: none;
+    background-color: #DC0027; /* Arsenal Red */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-container a:hover {
+    background-color: #A90020; /* Tmavší červená při najetí */
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
